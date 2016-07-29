@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import yaml
+import json
+list_1 = []
+
+list_1.append('hello')
+list_1.append('how are you')
+list_1.append({})
+
+list_1[-1]['ip_add'] = '1.2.3.4'
+list_1[-1]['attr'] = 'ASA'
+
+print list_1
+
+yaml.dump(list_1)
+print ('---------')
+yaml.dump(list_1, default_flow_style = True)
+print ('---------')
+
+json.dumps(list_1)
+

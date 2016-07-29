@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import yaml
+import json
+list_1 = '- hello\n- how are you\n- {attr: ASA, ip_add: 1.2.3.4}\n'
+
